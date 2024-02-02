@@ -1,35 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import React from "react";
+import Message from "./components/Message";
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Greeting />
+      <Job />
+      <Message />
     </>
-  )
+  );
 }
+function Greeting() {
+  return <h1>Hello !</h1>;
+}
+const Job = () => {
+  return <h2>React Js Developer</h2>;
+};
 
-export default App
+export default App;
+
+/*
+  component is peace of code. 
+  component has two type : 
+    - class component : old seri
+    - functional component : has two type of function
+        + arrow-function
+        + default-function
+  component return JSX
+  JSX like hmtl ... 😒
+    - return only one element
+    - can return 
+      + <> ... </>
+      + <div> ... </div>
+      + <React.Fragment> ... </React.Fragment>
+*/
