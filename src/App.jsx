@@ -1,35 +1,12 @@
 import React from "react";
-import Message from "./components/Message";
+import Greeting from "./components/Greeting";
+import "./App.css";
 function App() {
   return (
-    <>
+    <div className="Container">
       <Greeting />
-      <Job />
-      <Message />
-    </>
+    </div>
   );
 }
-function Greeting() {
-  return <h1>Hello !</h1>;
-}
-const Job = () => {
-  return <h2>React Js Developer</h2>;
-};
 
 export default App;
-
-/*
-  component is peace of code. 
-  component has two type : 
-    - class component : old seri
-    - functional component : has two type of function
-        + arrow-function
-        + default-function
-  component return JSX
-  JSX like hmtl ... 😒
-    - return only one element
-    - can return 
-      + <> ... </>
-      + <div> ... </div>
-      + <React.Fragment> ... </React.Fragment>
-*/
