@@ -1,9 +1,12 @@
 import React from "react";
 
-export default function Message() {
+function Message() {
   return (
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, debitis!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
+      itaque?
     </p>
   );
 }
+
+export default Message;
