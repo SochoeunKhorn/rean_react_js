@@ -1,9 +1,9 @@
 import React from "react";
-import GroupPoster from "./components/GroupPoster";
+import User from "./components/User";
 function App() {
   return (
     <>
-      <GroupPoster />
+      <User />
     </>
   );
 }
