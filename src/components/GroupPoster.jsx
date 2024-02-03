@@ -10,12 +10,12 @@ import soty from "../assets/images/soty.jpg";
 function GroupPoster() {
   return (
     <>
-      <Poster
-        imgSrc={sochoeun}
-        name="Sochoeun Khorn"
-        major="Mobile Developer"
-      />
-      <Poster imgSrc={both} name="Rin SotheaBoth" major="Manager" />
+      <Poster imgSrc={sochoeun} name="Sochoeun Khorn" major="Mobile Developer">
+        <button>Moew</button>
+      </Poster>
+      <Poster imgSrc={both} name="Rin SotheaBoth" major="Manager">
+        <button>Moew</button>
+      </Poster>
       <Poster imgSrc={hong} name="Yeang Kimhong" major="Engineer" />
       <Poster imgSrc={liheang} name="Ly Liheang" major="Data Analysis" />
       <Poster imgSrc={nang} name="Heng Somnang" major="Web Developer" />
