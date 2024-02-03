@@ -1,11 +1,11 @@
 import React from "react";
 import "./Poster.css";
-function Poster(props) {
+function Poster({ imgSrc, name, major }) {
   return (
     <article>
-      <img src={props.imgSrc} alt="profile" />
-      <h2>{props.name}</h2>
-      <h4>{props.major}</h4>
+      <img src={imgSrc} alt="profile" />
+      <h2>{name}</h2>
+      <h4>{major}</h4>
     </article>
   );
 }
