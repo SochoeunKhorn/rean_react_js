@@ -1,9 +1,9 @@
 import React from "react";
-import User from "./components/User";
+import Product from "./components/Product";
 function App() {
   return (
     <>
-      <User />
+      <Product />
     </>
   );
 }
