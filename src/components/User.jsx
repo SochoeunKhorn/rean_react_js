@@ -5,9 +5,15 @@ const name = [
   { name: "sochoeun", sex: "male" },
   { name: "sochoeun", sex: "male" },
 ];
-const userName = name.map((n) => <h3>{n.name}</h3>);
+
 const User = () => {
-  return <div>{userName}</div>;
+  return (
+    <div>
+      {name.map((n) => (
+        <h2>{n.name}</h2>
+      ))}
+    </div>
+  );
 };
 
 export default User;
