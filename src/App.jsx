@@ -1,17 +1,16 @@
 import React from "react";
 function App() {
-  const onChangeHandler = () => {
-    console.log("typing");
-  };
-  const onClickHandler = () => {
-    console.log("clicked");
-  };
+  function onSubmit(e) {
+    e.preventDefault();
+    console.log(e);
+  }
+
   return (
     <>
-      <form action="">
-        <input type="text" onChange={onChangeHandler} />
+      <form>
+        <input type="text" />
+        <button onClick={onSubmit}>Click Me!</button>
       </form>
-      <button onClick={onClickHandler}>Click Me!</button>
     </>
   );
 }
