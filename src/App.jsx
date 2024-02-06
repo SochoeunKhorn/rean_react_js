@@ -1,10 +1,21 @@
 import { useState } from "react";
+
 const App = () => {
-  const [count, setCount] = useState(0);
+  const [value, setValue] = useState("");
+  function handleChange(e) {
+    setValue(e.target.value);
+    console.log(value);
+  }
   return (
     <div>
-      <h1>{count}</h1>
-      <button onClick={() => setCount(count + 1)}>increment</button>
+      <h2>{value}</h2>
+      <input
+        type="text"
+        placeholder="typing..."
+        value={value}
+        onChange={handleChange}
+      />
+      <button onClick={() => setValue("")}>Clear</button>
     </div>
   );
 };
