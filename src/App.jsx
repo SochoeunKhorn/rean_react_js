@@ -1,9 +1,17 @@
 import React from "react";
-import Product from "./components/Product";
 function App() {
+  const onChangeHandler = () => {
+    console.log("typing");
+  };
+  const onClickHandler = () => {
+    console.log("clicked");
+  };
   return (
     <>
-      <Product />
+      <form action="">
+        <input type="text" onChange={onChangeHandler} />
+      </form>
+      <button onClick={onClickHandler}>Click Me!</button>
     </>
   );
 }
