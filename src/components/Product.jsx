@@ -32,21 +32,11 @@ function Product() {
       detial: "No comments yet! Add one to start the conversation.",
     },
   ];
-  const filterShoes = shoe.filter((fs) => {
-    return fs.brand === "Nike";
-  });
+
   return (
     <React.Fragment>
-      {filterShoes.map(({ id, img, brand, price, detail }) => {
-        return (
-          <Card
-            key={id}
-            img={img}
-            brand={brand}
-            price={price}
-            detail={detail}
-          />
-        );
+      {shoe.map((p) => {
+        return <Card product={p} key={p.id} />;
       })}
     </React.Fragment>
   );
