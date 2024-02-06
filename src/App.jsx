@@ -1,18 +1,12 @@
-import React from "react";
-function App() {
-  function onSubmit(e) {
-    e.preventDefault();
-    console.log(e);
-  }
-
+import { useState } from "react";
+const App = () => {
+  const [count, setCount] = useState(0);
   return (
-    <>
-      <form>
-        <input type="text" />
-        <button onClick={onSubmit}>Click Me!</button>
-      </form>
-    </>
+    <div>
+      <h1>{count}</h1>
+      <button onClick={() => setCount(count + 1)}>increment</button>
+    </div>
   );
-}
+};
 
 export default App;
