@@ -1,7 +1,7 @@
 import React from "react";
 import "./card.css";
 function Card(props) {
-  const { img, brand, price, detail } = props.product;
+  const { img, brand, price, detail } = props;
   return (
     <article>
       <img src={img} alt="image product" />

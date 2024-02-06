@@ -35,8 +35,8 @@ function Product() {
 
   return (
     <React.Fragment>
-      {shoe.map((p) => {
-        return <Card product={p} key={p.id} />;
+      {shoe.map((product) => {
+        return <Card {...product} key={product.id} />;
       })}
     </React.Fragment>
   );
