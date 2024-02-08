@@ -1,23 +1,22 @@
-import { useState } from "react";
+import React from "react";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <h2>Home Page</h2>,
+  },
+  {
+    path: "/about",
+    element: <h2>About Page</h2>,
+  },
+  {
+    path: "/contact",
+    element: <h2>Contact Page</h2>,
+  },
+]);
 const App = () => {
-  const [value, setValue] = useState("");
-  function handleChange(e) {
-    setValue(e.target.value);
-    console.log(value);
-  }
-  return (
-    <div>
-      <h2>{value}</h2>
-      <input
-        type="text"
-        placeholder="typing..."
-        value={value}
-        onChange={handleChange}
-      />
-      <button onClick={() => setValue("")}>Clear</button>
-    </div>
-  );
+  return <RouterProvider router={router} />;
 };
 
 export default App;
